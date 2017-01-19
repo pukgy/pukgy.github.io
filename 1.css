@@ -1,0 +1,43 @@
+.all{
+	width: 566px;
+	height: 566px;
+	position: relative;
+	overflow: hidden; "mask"
+}
+.layer1{
+	width: 566px;
+	height: 566px;
+	top:0px;
+	left: 0px;
+	z-index: 1;
+	position: absolute;
+}
+.layer2{
+	width: 566px;
+	
+	height: 90px;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)),to(rgba(0, 0, 0, 0.9)));
+	bottom:0px;
+	left: 0px;
+	z-index: 2;
+	position: absolute;
+	transition:0.4s;
+}
+.all:hover .layer2{
+	bottom:-30px;
+}
+
+.layer3{
+	width: 520px;
+	font-family: arial;
+	font-size: 24px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 28.8px;
+	display: block;
+	bottom: 10px;
+	left: 20px;
+	z-index: 3;
+	position: absolute;
+
+}
